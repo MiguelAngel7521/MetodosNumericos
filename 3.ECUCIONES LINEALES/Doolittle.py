@@ -8,6 +8,9 @@ from cmath import sqrt
 import pandas as pd
 
 # Utilizar luego de conseguir las matrices L y U con otro metodo
+
+#Descomposición LU El objetivo es descomponer la matriz 𝐴 A en el producto de dos matrices: 𝐴 = 𝐿 𝑈, donde 𝐿 es una matriz triangular inferior y 𝑈 es una matriz triangular superior.
+#  Se usa para resolver sistemas de ecuaciones de manera más eficiente.
 def SolucionLU(L, U, b):
     n = len(L)
     y = np.zeros(n)
@@ -39,6 +42,8 @@ def SolucionLU(L, U, b):
     return x
 
 #Metodo 
+
+# Los elementos de la diagonal principal de L son 1.los Elementos de la diagonal principal de U pueden ser cualquier numero
 def DoolittleLU(A):
     n = len(A)
 

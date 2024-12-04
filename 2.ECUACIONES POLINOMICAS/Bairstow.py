@@ -8,6 +8,10 @@ from IPython.display import display, Math
 from cmath import sqrt
 import pandas as pd
 
+
+
+#El método de Bairstow encuentra raíces de un polinomio dividiendo el problema en raíces cuadráticas.
+# Es ideal para encontrar raíces reales y complejas, y no requiere estimaciones iniciales complejas.
 def Bairstow(a, r, s, error=1e-6, max_iterations=10000):
     n = len(a)
     roots = []

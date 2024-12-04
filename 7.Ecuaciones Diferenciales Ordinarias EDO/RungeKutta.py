@@ -7,6 +7,10 @@ from IPython.display import display, Math
 from cmath import sqrt
 import pandas as pd
 
+
+
+
+#RungeKutta1 es exactamente igual al metodo de Euler
 def RungeKutta2(f, x0, y0, x, n):
   h = (x-x0)/n
   for i in range(n):

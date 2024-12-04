@@ -31,6 +31,7 @@ print("Resultado de RTrapezoidal para*** g:", resultado_g)
 
 # ROMBERT
 # definir f funcion de x, a y b como limites inferior y superior y n numero de pasos
+# se basa en la aplicacion sucesiva de la regla trapezoidal
 def Romberg(f, a, b, n):
   I1 = RTrapezoidal(f, a, b, n)
   I2 = RTrapezoidal(f, a, b, n*2)

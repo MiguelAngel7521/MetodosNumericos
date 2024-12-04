@@ -7,6 +7,12 @@ from IPython.display import display, Math
 from cmath import sqrt
 import pandas as pd
 
+
+
+#es una extensión del método de Newton-Raphson que utiliza información adicional (la segunda derivada de la función) 
+#para mejorar la precisión de la aproximación de la raíz. Es un método iterativo con convergencia cúbica, 
+# lo que significa que converge mucho más rápido que Newton-Raphson si la aproximación inicial está cerca de la raíz
+
 f = lambda x : math.log(x)
 f1 = lambda x : 1/x
 f2 = lambda x : -1/(x**2)

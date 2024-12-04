@@ -10,6 +10,10 @@ import pandas as pd
 #Broyden calcula la inversa del jacobiano solo la primera vez, y despues utiliza A-1 para recalcular, mientras que newton raphson la calcula en cada iteracion
 # Lo mismo que en newton raphson
 # No usar arrays de nunmpy
+
+
+#El método de Broyden es una variante del método de Newton-Raphson que evita el cálculo explícito del Jacobiano en cada iteración. 
+#Es un método cuasi-Newton, y actualiza una aproximación al Jacobiano en cada paso.
 def Broyden(fx, X, x0, tol=1e-6, max_iter=100):
     J = fx.jacobian(X)
     v = list(zip(X, x0))

@@ -40,6 +40,7 @@ def SolucionLU(L, U, b):
 
 #Metodo de Crout
 # Enviar los coeficien en "A" y esta funcion te devolvera las matrices L y U
+#Los Elemtos de la Diagonal principal de L pueden ser cualquier numero, los elemtos de la diagonal de U son 1
 def CroutLU(A):
     n = len(A)
 

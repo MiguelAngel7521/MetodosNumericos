@@ -38,6 +38,8 @@ def SolucionLU(L, U, b):
 
     return x
 #Metodo de choleky
+#Los Elemetos de la diagonal principal de L pueden ser cualquier numero
+#Útil para matrices simétricas y definidas positivas. Aquí 𝐴 = 𝐿𝐿**𝑇 , donde 𝐿 es triangular inferior y 𝐿**𝑇 es su transpuesta.
 def CholeskyLU(A):
     n = len(A)
     L = np.zeros((n, n))

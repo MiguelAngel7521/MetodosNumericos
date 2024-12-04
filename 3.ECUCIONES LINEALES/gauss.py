@@ -7,6 +7,9 @@ from IPython.display import display, Math
 from cmath import sqrt
 import pandas as pd
 
+
+#El método de Gauss convierte el sistema Ax=b 
+#  un sistema triangular superior mediante operaciones elementales en filas.
 def Gauss(A, b):
 
     n = len(b)

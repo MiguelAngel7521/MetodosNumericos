@@ -11,6 +11,8 @@ import pandas as pd
 
 import numpy as np
 
+
+#El método de Jacobi es un método iterativo para resolver sistemas de ecuaciones lineales. Funciona bien si la matriz 𝐴 es diagonal dominante.
 def jacobi(A, b, x0, tol=1e-6, max_iter=10000):
   """
   Resuelve un sistema de ecuaciones lineales utilizando el método de Jacobi.

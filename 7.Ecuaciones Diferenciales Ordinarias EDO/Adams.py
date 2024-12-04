@@ -8,8 +8,10 @@ from cmath import sqrt
 import pandas as pd
 
 def f(x, y):
-  return x**2*y
+  return x**2 + 2*x - 2*y
 
+
+#se basa en la serie de Taylor
 def Adams2(f, x0, y0, y_1, x, n):
   h = (x-x0)/n
   x_1 = x0-h
@@ -22,7 +24,7 @@ def Adams2(f, x0, y0, y_1, x, n):
     x0 += h
   print(x0, y0)
   return y
-resultado1 = Adams2(f, 2, 8, 5.359375, 4, 8)
+resultado1 = Adams2(f, 2, 8, 8.765217, 3, 8)
 print("Resultado de Adams2 para f:", resultado1)
 
 def Adams3(f, x0, y0, y_1, y_2, x, n):
@@ -40,7 +42,7 @@ def Adams3(f, x0, y0, y_1, y_2, x, n):
     x0 += h
   print(x0, y0)
   return y
-resultado2 = Adams3(f, 2, 8, 5.359375, 3.375, 4, 8)
+resultado2 = Adams3(f, 2, 8, 8.760017, 3.375, 4, 10000)
 print("Resultado de Adams3 para f:", resultado2)
 
 def Adams4(f, x0, y0, y_1, y_2, y_3, x, n):
@@ -61,5 +63,5 @@ def Adams4(f, x0, y0, y_1, y_2, y_3, x, n):
     x0 += h
   print(x0, y0)
   return y
-resultado3 = Adams4(f, 2, 8, 5.359375, 3.375, 1.953125, 4, 8)
+resultado3 = Adams4(f, 2, 8, 8.765217, 3.375, 1.953125, 4, 8)
 print("Resultado de Adams4 para f:", resultado3)

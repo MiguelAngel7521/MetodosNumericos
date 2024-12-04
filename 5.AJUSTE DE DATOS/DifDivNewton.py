@@ -18,6 +18,8 @@ def fr(X, Y):
 # utiliza una funcion recursiva f(x) -> f[x] te genera una ecuacion polinomica
 # Enviar el vector de variables "x" y sus funciones "y" en fx
 # Si no se envia un punto especifico "p", la funcion devuelve otra funcion, que se puede usar para calcular puntos
+# El método de diferencias divididas de Newton utiliza una representación polinómica para interpolar un conjunto de puntos 
+# ( 𝑥 0 , 𝑦 0 ) , ( 𝑥 1 , 𝑦 1 ) , … , ( 𝑥 𝑛 , 𝑦 𝑛 ) (x 0 ​ ,y 0 ​ ),(x 1 ​ ,y 1 ​ ),…,(x n ​ ,y n ​ ).
 def DifDivNewton(X, fX, p = 0):
   b = []
   n = len(X)

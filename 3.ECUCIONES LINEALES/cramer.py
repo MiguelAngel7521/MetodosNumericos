@@ -9,6 +9,8 @@ import pandas as pd
 
 import numpy as np
 
+
+#El método de Cramer usa determinantes para resolver un sistema de 𝑛 n ecuaciones lineales con 𝑛 n incógnitas ( 𝐴 𝑥 = 𝑏 Ax=b).
 def cramer(A, b):
   n = len(b)
   det_A = np.linalg.det(A)

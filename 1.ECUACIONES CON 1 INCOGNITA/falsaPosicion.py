@@ -7,8 +7,9 @@ from IPython.display import display, Math
 from cmath import sqrt
 import pandas as pd
 
-
-f = lambda x : math.log(x)
+# METODO QUE ENCIERRA LA RAIZ 
+#Este método también utiliza un intervalo [X0,X1], pero en lugar de dividir el intervalo a la mitad, utiliza una aproximación lineal para calcular una mejor estimación de la raíz.
+f = lambda x : x+math.log10(x)-5
 f1 = lambda x : 1/x
 f2 = lambda x : -1/(x**2)
 def falsaPosicion(funcion, x0, x1, error = 1e-6):

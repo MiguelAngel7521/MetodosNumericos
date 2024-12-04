@@ -8,7 +8,9 @@ from cmath import sqrt
 import pandas as pd
 
 
-
+#las formulas de alta precision parten de la serie de taylor
+#1ra derivada 2termino
+#2da derivada 3terminos
 f = lambda x : (x*(100-x))/(125)
 def formAltaPrecision2t(f, x, h):
   return (f(x+h)-f(x))/h

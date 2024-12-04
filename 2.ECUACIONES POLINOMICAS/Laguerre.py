@@ -7,6 +7,10 @@ from IPython.display import display, Math
 from cmath import sqrt
 import pandas as pd
 
+
+
+#El método de Laguerre es un método iterativo para encontrar una raíz de un polinomio 𝑃(𝑥)
+#Es especialmente útil porque converge rápidamente y puede encontrar raíces complejas.
 def Laguerre(f, f1, f2, x0, n, error=1e-6):
   i = 0
   x1 = 0

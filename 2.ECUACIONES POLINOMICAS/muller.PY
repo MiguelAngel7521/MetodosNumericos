@@ -6,8 +6,11 @@ import numpy as np
 from IPython.display import display, Math
 from cmath import sqrt
 import pandas as pd
-
-
+#El método de Muller es una extensión del método de la secante que utiliza una parábola en lugar de una línea para aproximar las raíces.
+# esto lo hace especialmente útil para encontrar raíces complejas.
+# Consiste en obtener una parabola que pasa por 3 puntos elegidos. dichos coeficientes son reemplazados en la ecuacion cuadratica
+#para obtener el valor de la parabola que intersecta X
+#la parabola se define f(x)=ax**2+bx+c
 def muller(f, x0, x1, x2, error=1e-6):
   i = 1
   h1 = x1 - x0

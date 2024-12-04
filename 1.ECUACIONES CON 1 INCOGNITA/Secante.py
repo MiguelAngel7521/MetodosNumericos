@@ -1,6 +1,10 @@
 import math
 import pandas as pd
 
+
+
+#Este método es similar al de Newton-Raphson, pero no requiere calcular la derivada de 𝑓(𝑥). En su lugar, utiliza una aproximación basada en dos puntos iniciales, 𝑥0​ y 𝑥1.
+#X1 Y X2 DEBEN SER VALORES CERCANOS
 f = lambda x: math.log(x) if x > 0 else float('nan')
 f1 = lambda x: 1 / x if x != 0 else float('nan')
 

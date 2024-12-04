@@ -13,6 +13,7 @@ def f(x, y):
 # definir la funcion que van a evaluar, debe ser de tipo: dx/dy = (tu funcion f(x, y))
 # Enviar la funcion f, puntos calculados x0 y y0, punto a calcular x y n numero de pasos
 # Enviar a demas un valor calculado anterior (y_1) n numero de pasos, y m numero de correctores
+#se basa en el metodo de Euler y la regla trapezoidal
 def HeunSinPrincipio(f, x0, y0, y_1, x, n, m):
   h = (x-x0)/n
   for i in range(n):

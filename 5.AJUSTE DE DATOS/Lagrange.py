@@ -1,5 +1,7 @@
 from math import prod
 
+
+#La interpolación de Lagrange ajusta un polinomio de grado 𝑛 − 1 a 𝑛  puntos dados. La fórmula utiliza los polinomios base de Lagrange.
 def lagrange(pairs, x, n=None):
     """
     Perform Lagrange interpolation to fit data.
